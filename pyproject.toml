@@ -1,7 +1,7 @@
 [project]
 name = "Application django"
 requires-python = "<4.0,>=3.10"
-version = "1.12.0"
+version = "1.0"
 description = "Bienvenue sur le projet du Génialissime Victorio-Garcia"
 authors = [
     {name = "Victorio Garcia", email = "victoriogarciapro@gmail.comr"}
@@ -14,53 +14,3 @@ dependencies = [
     "django<6.0.0,>=5.1.4",
 ]
 
-[tool.pyright]
-reportAttributeAccessIssue = false
-reportArgumentType = false
-reportFunctionMemberAccess = false
-reportGeneralTypeIssues = false
-reportIncompatibleMethodOverride = false
-reportIncompatibleVariableOverride = false
-reportOptionalCall = false
-reportOptionalMemberAccess = false
-reportUnboundVariable = false
-
-[tool.ruff]
-exclude = [
-    ".bzr",
-    ".direnv",
-    ".eggs",
-    ".git",
-    ".git-rewrite",
-    ".hg",
-    ".ipynb_checkpoints",
-    ".mypy_cache",
-    ".nox",
-    ".pants.d",
-    ".pyenv",
-    ".pytest_cache",
-    ".pytype",
-    ".ruff_cache",
-    ".svn",
-    ".tox",
-    ".venv",
-    ".vscode",
-    "__pypackages__",
-    "_build",
-    "buck-out",
-    "build",
-    "dist",
-    "node_modules",
-    "site-packages",
-    "venv",
-    "migrations"
-]
-
-line-length = 119
-
-[tool.ruff.lint]
-select = ["E", "F", "I"]
-ignore = ["E203", "E266"]
-
-[tool.ruff.lint.isort]
-combine-as-imports = true
